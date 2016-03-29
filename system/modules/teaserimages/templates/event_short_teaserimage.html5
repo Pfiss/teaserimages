@@ -26,7 +26,7 @@
 <?php if ($this->teaser_href): ?>
 <a href="<?php echo $this->teaser_href; ?>"<?php echo $this->teaser_attributes; ?> title="<?php echo $this->teaser_alt; ?>">
 <?php endif; ?>
-<img src="<?php echo $this->teaser_src; ?>"<?php echo $this->teaser_imgSize; ?> alt="<?php echo $this->teaser_alt; ?>" />
+<?php $this->insert('picture_default', $this->picture); ?>
 <?php if ($this->teaser_href): ?>
 </a>
 <?php endif; ?>
